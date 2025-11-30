@@ -16,13 +16,21 @@
         header {
             background:#001f3f;
             color:white;
-            padding:20px;
+            padding:15px;
+        }
+
+        nav {
+            background:#003366;
+            padding:10px;
             text-align:center;
         }
 
-        h1 {
-            margin:0;
-            font-size:28px;
+        nav a {
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+            font-weight:bold;
         }
 
         .container {
@@ -66,9 +74,22 @@
     <p>I migliori prodotti selezionati per te</p>
 </header>
 
+<nav>
+    <a href="#home">Home</a>
+    <a href="#prodotti">Prodotti</a>
+    <a href="#cuffie">Cuffie</a>
+    <a href="#offerte">Offerte</a>
+    <a href="#chisiamo">Chi Siamo</a>
+</nav>
+
 <div class="container">
 
-    <h2>Casa e Cucina 🍳</h2>
+    <!-- HOME -->
+    <h2 id="home">🏠 Home</h2>
+    <p>Benvenuto su Shopping Smart IT! Qui trovi i migliori prodotti consigliati e selezionati per qualità e recensioni.</p>
+
+    <!-- PRODOTTI -->
+    <h2 id="prodotti">🛍️ Prodotti – Casa e Cucina 🍳</h2>
 
     <div class="product">
         <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg" alt="Friggitrice Philips">
@@ -80,7 +101,23 @@
         <a class="btn" href="https://amzn.to/3XmPwOr" target="_blank">👉 Vedi Offerta su Amazon</a>
     </div>
 
+    <!-- CUFFIE -->
+    <h2 id="cuffie">🎧 Cuffie – I più venduti</h2>
+    <p>(Qui aggiungeremo le cuffie più popolari 👍)</p>
+
+    <!-- OFFERTE -->
+    <h2 id="offerte">🔥 Offerte della Settimana</h2>
+    <p>(Qui inseriremo 2–3 prodotti in offerta del momento)</p>
+
+    <!-- CHI SIAMO -->
+    <h2 id="chisiamo">👤 Chi Siamo</h2>
+    <p>
+        Siamo un team appassionato di tecnologia e prodotti per la casa.
+        Selezioniamo ogni giorno le migliori offerte e consigli per aiutarti a fare acquisti intelligenti.
+    </p>
+
 </div>
 
 </body>
 </html>
+
