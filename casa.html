@@ -1,1 +1,109 @@
-crea pagina casa
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti per Casa – Shopping Smart IT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* MENU */
+        nav {
+            background: #003366;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        /* CARD PRODOTTO */
+        .product {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .product-description {
+            font-size: 15px;
+            color: #444;
+        }
+
+        .button {
+            display: block;
+            background: #ff9900;
+            padding: 12px;
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="casa.html">Prodotti per Casa</a>
+        <a href="elettronica.html">Elettronica</a>
+        <a href="offerte.html">Offerte</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+    </nav>
+
+    <h1>Prodotti per Casa 🏡</h1>
+
+    <!-- PRODOTTO 1 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg" alt="Friggitrice Philips">
+
+        <p class="product-title">Friggitrice ad Aria Philips – Modello Top 🏆🔥</p>
+
+        <p class="product-description">
+            Cottura sana con meno olio, perfetta per patatine, pollo, carne e verdure.
+            Tecnologia RapidAir e qualità Philips garantita.
+        </p>
+
+        <a class="button" href="https://amzn.to/3XmPwOr" target="_blank">
+            👉 Vedi Offerta su Amazon
+        </a>
+    </div>
+
+</body>
+</html>
