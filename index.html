@@ -1,41 +1,86 @@
-<h2 style="text-align:center; margin-top:30px;">Casa e Cucina 🍽️</h2>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Smart IT</title>
 
-<div style="
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 15px;
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
-">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:0;
+        }
 
-    <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg"
-         alt="Friggitrice Philips"
-         style="width:100%; border-radius:10px;">
+        header {
+            background:#001f3f;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
 
-    <h3 style="font-family:Arial; margin-top:15px;">
-        Friggitrice ad Aria Philips – Modello Top 🏆🔥
-    </h3>
+        h1 {
+            margin:0;
+            font-size:28px;
+        }
 
-    <p style="font-family:Arial; font-size:14px; color:#444;">
-        Cottura sana e veloce con meno olio! Perfetta per patatine, pollo,
-        carne, verdure e ricette da chef 👨‍🍳  
-        Spedizione veloce con Amazon Prime 🚚⚡
-    </p>
+        .container {
+            width:95%;
+            max-width:900px;
+            margin:20px auto;
+        }
 
-    <a href="https://amzn.to/3XmPwOr" target="_blank"
-       style="
-           display:block;
-           text-align:center;
-           background:#ff9900;
-           padding:12px;
-           color:#fff;
-           text-decoration:none;
-           font-weight:bold;
-           border-radius:8px;
-           font-family:Arial;
-           margin-top:10px;">
-        👉 Vedi Offerta su Amazon
-    </a>
+        .product {
+            background:white;
+            border:1px solid #ccc;
+            border-radius:10px;
+            padding:15px;
+            margin-bottom:25px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width:100%;
+            border-radius:10px;
+        }
+
+        .btn {
+            display:block;
+            text-align:center;
+            background:#ff9900;
+            padding:12px;
+            margin-top:10px;
+            color:white;
+            font-weight:bold;
+            text-decoration:none;
+            border-radius:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Shopping Smart IT 🛒</h1>
+    <p>I migliori prodotti selezionati per te</p>
+</header>
+
+<div class="container">
+
+    <h2>Casa e Cucina 🍳</h2>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg" alt="Friggitrice Philips">
+        <h3>Friggitrice ad Aria Philips – Modello Top 🏆🔥</h3>
+        <p>
+            Cottura sana e veloce con meno olio! Perfetta per patatine, pollo,
+            carne, verdure e ricette da chef. Spedizione veloce con Amazon Prime. 🛵⚡
+        </p>
+        <a class="btn" href="https://amzn.to/3XmPwOr" target="_blank">👉 Vedi Offerta su Amazon</a>
+    </div>
+
 </div>
+
+</body>
+</html>
