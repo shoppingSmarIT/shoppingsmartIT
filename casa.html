@@ -3,62 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prodotti per la Casa</title>
+<title>Prodotti per la Casa - ShoppingSmart IT</title>
 
 <style>
-    body { margin:0; background:#111; color:#eee; font-family:Arial; }
-
-    header {
-        background:#000; padding:20px; text-align:center;
-        border-bottom:3px solid gold; position:fixed; top:0; width:100%; z-index:999;
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #eee;
     }
 
-    .logo { color:gold; font-size:30px; font-weight:bold; }
+    /* NAVBAR */
+    header {
+        background: #000;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid gold;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .logo {
+        color: gold;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
     nav {
-        background:#111; padding:12px; text-align:center;
-        border-bottom:2px solid gold; margin-top:72px;
+        background: #111;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 2px solid gold;
+        margin-top: 90px;
     }
 
     nav a {
-        color:gold; margin:0 20px; text-decoration:none; font-weight:bold; font-size:18px;
+        color: gold;
+        font-size: 18px;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    .content { max-width:1000px; margin:40px auto; }
+    nav a:hover {
+        text-decoration: underline;
+    }
 
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: gold;
+        text-shadow: 0 0 10px gold;
+    }
+
+    /* Banner grande */
+    .banner img {
+        width: 95%;
+        max-width: 900px;
+        border-radius: 15px;
+        box-shadow: 0 0 25px gold;
+        margin-bottom: 40px;
+    }
+
+    /* Mini Galleria */
+    .mini-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .mini-gallery img {
+        width: 30%;
+        min-width: 250px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px gold;
+    }
+
+    /* Card prodotto */
     .product {
-        background:#222;
-        padding:25px;
-        margin:35px auto;
-        border-radius:15px;
-        box-shadow:0 0 15px gold;
-        text-align:center;
-        max-width:900px;
+        background: #222;
+        margin: 25px auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 800px;
+        text-align: center;
+        box-shadow: 0 0 20px gold;
     }
 
     .product img {
-        width:90%;
-        max-width:350px;
-        border-radius:12px;
-        box-shadow:0 0 10px gold;
+        width: 80%;
+        border-radius: 10px;
     }
 
     .btn {
-        display:block;
-        width:60%;
-        margin:20px auto 0;
-        padding:12px;
-        background:gold;
-        color:#000;
-        text-decoration:none;
-        font-weight:bold;
-        border-radius:8px;
-        font-size:18px;
+        display: block;
+        background: gold;
+        color: #000;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 15px;
+        font-weight: bold;
     }
 
+    .btn:hover {
+        background: #e6c200;
+    }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
@@ -75,40 +137,35 @@
 
 <div class="content">
 
-<h1 style="text-align:center; color:gold;">Prodotti per la Casa 🏡</h1>
+    <h1>Prodotti per la Casa 🏡</h1>
 
-<!-- MINI GALLERIA -->
-<div style="
-    max-width:1000px;
-    margin:30px auto;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-">
-    <img src="https://images.unsplash.com/photo-1600585154145-7124c37e6b0c?auto=format&fit=crop&w=600&q=80"
-         style="width:30%; min-width:220px; border-radius:15px; box-shadow:0 0 12px gold;">
-    <img src="https://images.unsplash.com/photo-1600585154085-3705a33d5f4b?auto=format&fit=crop&w=600&q=80"
-         style="width:30%; min-width:220px; border-radius:15px; box-shadow:0 0 12px gold;">
-    <img src="https://images.unsplash.com/photo-1588853251956-ecde3b4bb274?auto=format&fit=crop&w=600&q=80"
-         style="width:30%; min-width:220px; border-radius:15px; box-shadow:0 0 12px gold;">
-</div>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1600585154240-33e41bd2c34a?auto=format&fit=crop&w=1200&q=60" alt="Casa banner">
+    </div>
 
-<!-- PRODOTTO 1 -->
-<div class="product">
-    <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg">
-    <h2>Friggitrice ad Aria Philips</h2>
-    <p>Cucina sana, veloce e senza olio. Bestseller Amazon.</p>
-    <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
-</div>
+    <!-- Mini Galleria -->
+    <div class="mini-gallery">
+        <img src="https://images.unsplash.com/photo-1600585154144-7124c37e6b0c?auto=format&fit=crop&w=500&q=60">
+        <img src="https://images.unsplash.com/photo-1600585154085-3705a3d3f4bb?auto=format&fit=crop&w=500&q=60">
+        <img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059e?auto=format&fit=crop&w=500&q=60">
+    </div>
 
-<!-- PRODOTTO 2 -->
-<div class="product">
-    <img src="https://m.media-amazon.com/images/I/61nQCMvOTWL._AC_SL1500_.jpg">
-    <h2>Aspirapolvere Senza Fili</h2>
-    <p>Potente, leggero e perfetto per casa.</p>
-    <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
-</div>
+    <!-- PRODOTTO 1 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71X6tV6tVML._AC_SL1500_.jpg">
+        <h2>Friggitrice ad Aria Philips</h2>
+        <p>Cucina sana, veloce e senza olio. Bestseller Amazon.</p>
+        <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
+    </div>
+
+    <!-- PRODOTTO 2 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61nQCMvOTWL._AC_SL1500_.jpg">
+        <h2>Aspirapolvere Senza Fili</h2>
+        <p>Potente e leggero, ideale per pavimenti e tappeti.</p>
+        <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
+    </div>
 
 </div>
 
