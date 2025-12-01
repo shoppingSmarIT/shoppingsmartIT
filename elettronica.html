@@ -3,108 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>elettronica- Shopping Smart IT</title>
+<title>Elettronica - Shopping Smart IT</title>
 
 <style>
     body {
-        margin: 0;
         font-family: Arial, sans-serif;
         background: #111;
-        color: #eee;
+        color: #fff;
+        margin: 0;
+        padding: 0;
     }
 
-    header {
+    /* MENU */
+    nav {
         background: #000;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
-        border-bottom: 3px solid gold;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+        border-bottom: 3px solid #ffcc00;
     }
 
-    header .logo {
-        color: gold;
-        font-size: 28px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-    .topnav {
-        position: fixed;
-        top: 70px;
-        width: 100%;
-        background: #111;
-        padding: 12px 0;
-        text-align: center;
-        border-bottom: 1px solid #333;
-        z-index: 999;
-    }
-
-    .topnav a {
-        color: gold;
-        margin: 0 15px;
-        text-decoration: none;
+    nav a {
+        color: #ffcc00;
+        margin: 0 20px;
         font-size: 18px;
+        text-decoration: none;
         font-weight: bold;
     }
 
-    .topnav a:hover {
-        color: white;
+    nav a:hover {
+        text-decoration: underline;
     }
 
-    .content {
-        margin-top: 150px;
+    h1 {
         text-align: center;
+        color: #ffcc00;
+        margin-top: 25px;
+    }
+
+    .product-box {
+        background: #222;
+        border: 1px solid #444;
         padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 800px;
     }
 
-    h1, h2 {
-        color: gold;
+    .product-box img {
+        width: 100%;
+        border-radius: 10px;
     }
 
+    .amazon-btn {
+        display: block;
+        text-align: center;
+        background: #ffcc00;
+        padding: 12px;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .amazon-btn:hover {
+        background: #e6b800;
+    }
 </style>
-
 </head>
 
 <body>
 
-<header>
-    <div class="logo">ShoppingSmart IT</div>
-</header>
-
-<nav class="topnav">
-    <a href="index.html">Home</a>
+<nav>
+    <a href="home.html">Home</a>
     <a href="casa.html">Prodotti Casa</a>
     <a href="elettronica.html">Elettronica</a>
     <a href="offerte.html">Offerte</a>
     <a href="chi-siamo.html">Chi Siamo</a>
 </nav>
 
-    <!-- PRODOTTO 1 -->
-    <div class="product">
-        <h2>Cuffie Bluetooth Sony WH-CH520</h2>
-        <img src="https://m.media-amazon.com/images/I/71DBCBGdlFL._AC_SL1500_.jpg">
-        <p>Cuffie leggere, batteria 50 ore, qualità Sony. Bestseller Amazon.</p>
-        <a class="btn" href="https://amzn.to/3U5IiTg" target="_blank">Vedi su Amazon</a>
-    </div>
+<h1>🖥️ Elettronica</h1>
 
-    <!-- PRODOTTO 2 -->
-    <div class="product">
-        <h2>Power Bank Anker 20.000mAh</h2>
-        <img src="https://m.media-amazon.com/images/I/61G9vGRCJaL._AC_SL1500_.jpg">
-        <p>Uno dei powerbank più venduti al mondo. Potente, affidabile e sicuro.</p>
-        <a class="btn" href="https://amzn.to/48OHl1X" target="_blank">Vedi su Amazon</a>
-    </div>
+<!-- PRODOTTO 1 -->
+<div class="product-box">
+    <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SX450_.jpg" alt="Cuffie Sony WH-CH520">
+    <h2>Cuffie Sony WH-CH520</h2>
+    <p>Leggere, comode, batteria 50 ore. Bestseller Amazon.</p>
+    <a class="amazon-btn" href="TUO_LINK_AMAZON" target="_blank">🎧 Vedi su Amazon</a>
+</div>
 
-    <!-- PRODOTTO 3 -->
-    <div class="product">
-        <h2>Smartwatch Amazfit Bip 3</h2>
-        <img src="https://m.media-amazon.com/images/I/61fA25pQ7NL._AC_SL1500_.jpg">
-        <p>GPS integrato, batteria lunga durata, schermo grande e leggibile.</p>
-        <a class="btn" href="https://amzn.to/3U5r7Pe" target="_blank">Vedi su Amazon</a>
-    </div>
+<!-- PRODOTTO 2 -->
+<div class="product-box">
+    <img src="https://m.media-amazon.com/images/I/61Qe0l2G2-L._AC_SX425_.jpg" alt="Powerbank Anker">
+    <h2>Power Bank Anker 20.000mAh</h2>
+    <p>Il powerbank più venduto al mondo. Affidabile e sicuro.</p>
+    <a class="amazon-btn" href="TUO_LINK_AMAZON" target="_blank">🔋 Vedi su Amazon</a>
+</div>
+
+<!-- PRODOTTO 3 -->
+<div class="product-box">
+    <img src="https://m.media-amazon.com/images/I/61-0zNaJmPL._AC_SX425_.jpg" alt="Amazfit Bip 3">
+    <h2>Smartwatch Amazfit Bip 3</h2>
+    <p>GPS, grande display, autonomia 14 giorni.</p>
+    <a class="amazon-btn" href="TUO_LINK_AMAZON" target="_blank">⌚ Vedi su Amazon</a>
+</div>
 
 </body>
 </html>
