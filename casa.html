@@ -1,117 +1,156 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodotti per Casa – Shopping Smart IT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prodotti Casa - Shopping Smart IT</title>
 
-    <style>
-        body 
-       <nav style="background:#003366; padding:15px; text-align:center;">
-    <a href="home.html" style="color:white; margin:0 20px; font-weight:bold; text-decoration:none;">Home</a>
-    <a href="casa.html" style="color:white; margin:0 20px; font-weight:bold; text-decoration:none;">Prodotti Casa</a>
-    <a href="elettronica.html" style="color:white; margin:0 20px; font-weight:bold; text-decoration:none;">Elettronica</a>
-    <a href="offerte.html" style="color:white; margin:0 20px; font-weight:bold; text-decoration:none;">Offerte</a>
-    <a href="chi-siamo.html" style="color:white; margin:0 20px; font-weight:bold; text-decoration:none;">Chi Siamo</a>
-</nav>
-        {
-            font-family: Arial, sans-serif;
-            background: #f3f4f6;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #eee;
+    }
 
-        /* MENU */
-        nav {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+    header {
+        background: #000;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid gold;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
 
-        h1 {
-            text-align: center;
-            margin-top: 25px;
-        }
+    header .logo {
+        color: gold;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-        /* CARD PRODOTTO */
-        .product {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    .topnav {
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        background: #111;
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        z-index: 999;
+    }
 
-        .product img {
-            width: 150px;
-            border-radius: 10px;
-        }
+    .topnav a {
+        color: gold;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-        .product-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+    .topnav a:hover {
+        color: white;
+    }
 
-        .product-description {
-            font-size: 15px;
-            color: #444;
-        }
+    .content {
+        margin-top: 150px;
+        padding: 20px;
+    }
 
-        .button {
-            display: block;
-            background: #ff9900;
-            padding: 12px;
-            color: white;
-            text-align: center;
-            margin-top: 15px;
-            font-weight: bold;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-    </style>
+    .product {
+        background: #1b1b1b;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 900px;
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+    }
+
+    h1, h2 {
+        color: gold;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        background: gold;
+        color: #000;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .btn:hover {
+        background: #c7a200;
+    }
+</style>
+
 </head>
 
 <body>
 
-    <!-- MENU -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="casa.html">Prodotti per Casa</a>
-        <a href="elettronica.html">Elettronica</a>
-        <a href="offerte.html">Offerte</a>
-        <a href="chi-siamo.html">Chi Siamo</a>
-    </nav>
+<header>
+    <div class="logo">ShoppingSmart IT</div>
+</header>
 
-    <h1>Prodotti per Casa 🏡</h1>
+<nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="casa.html">Prodotti Casa</a>
+    <a href="elettronica.html">Elettronica</a>
+    <a href="offerte.html">Offerte</a>
+    <a href="chi-siamo.html">Chi Siamo</a>
+</nav>
+
+<div class="content">
+
+    <h1>Prodotti per la Casa 🏠</h1>
 
     <!-- PRODOTTO 1 -->
     <div class="product">
-        <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg" alt="Friggitrice Philips">
-
-        <p class="product-title">Friggitrice ad Aria Philips – Modello Top 🏆🔥</p>
-
-        <p class="product-description">
-            Cottura sana con meno olio, perfetta per patatine, pollo, carne e verdure.
-            Tecnologia RapidAir e qualità Philips garantita.
-        </p>
-
-        <a class="button" href="https://amzn.to/3XmPwOr" target="_blank">
-            👉 Vedi Offerta su Amazon
-        </a>
+        <img src="https://m.media-amazon.com/images/I/71X6tV6tVmL._AC_SL1500_.jpg">
+        <h2>Friggitrice ad Aria Philips</h2>
+        <p>Cucina sana, veloce e senza olio. Bestseller Amazon.</p>
+        <a class="btn" href="https://amzn.to/3XmPwOr" target="_blank">Vedi su Amazon</a>
     </div>
+
+    <!-- PRODOTTO 2 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61nQCMvOTWL._AC_SL1500_.jpg">
+        <h2>Aspirapolvere Senza Fili</h2>
+        <p>Potente e leggero, perfetto per pavimenti e tappeti.</p>
+        <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
+    </div>
+
+    <!-- PRODOTTO 3 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61oSjVqUCaL._AC_SL1500_.jpg">
+        <h2>Macchina da Caffè DeLonghi</h2>
+        <p>Caffè perfetto ogni mattina. Bestseller italiano.</p>
+        <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
+    </div>
+
+    <!-- PRODOTTO 4 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61vQ0bnXyML._AC_SL1500_.jpg">
+        <h2>Robot Aspirapolvere Lefant</h2>
+        <p>Silenzioso, compatto e ideale per animali domestici.</p>
+        <a class="btn" href="#" target="_blank">Vedi su Amazon</a>
+    </div>
+
+</div>
 
 </body>
 </html>
