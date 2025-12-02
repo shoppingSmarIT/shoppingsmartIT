@@ -1,1 +1,79 @@
+/* ----- STILE GENERALE ----- */
+body {
+    background: #000;
+    color: gold;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+/* ----- LOGO ----- */
+header .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 0 0 12px gold;
+    padding-top: 30px;
+}
+
+/* ----- MENU NAVBAR ----- */
+nav {
+    background: #111;
+    padding: 15px 0;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    margin-top: 20px;
+}
+
+nav a {
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* ----- TITOLI GLOW ----- */
+h1 {
+    color: gold;
+    text-shadow: 0 0 12px gold;
+    margin-top: 40px;
+}
+
+/* MINI GALLERIA E FOTO */
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 12px gold;
+}
+
+/* ----- BOX ----- */
+.box {
+    background: #111;
+    padding: 30px;
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 22px gold;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    margin-top: 60px;
+    background: #111;
+    padding: 25px 10px;
+    text-align: center;
+    color: gold;
+    border-top: 2px solid gold;
+}
+
+footer a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
