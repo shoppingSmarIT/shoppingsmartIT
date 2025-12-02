@@ -2,76 +2,98 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoppingSmart IT - Home</title>
 
     <style>
         body {
-            background-color: #0d0d0d;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            background:black;
+            color:gold;
+            font-family:Arial;
+            margin:0;
+            padding:0;
+            text-align:center;
         }
 
-        h1, h2, p {
-            color: gold !important;
+        /* LOGO */
+        .logo {
+            font-size:36px;
+            font-weight:bold;
+            color:gold;
+            margin-top:25px;
+            text-shadow:0 0 12px gold;
         }
 
-        .navbar {
-            background-color: #111;
-            padding: 20px;
-            border-bottom: 2px solid gold;
+        /* NAVBAR */
+        nav {
+            background:#111;
+            padding:15px 0;
+            border-bottom:2px solid gold;
+            margin-top:20px;
         }
-
-        .navbar a {
-            color: gold;
-            margin: 0 15px;
-            font-size: 20px;
-            text-decoration: none;
+        nav a {
+            color:gold;
+            font-weight:bold;
+            text-decoration:none;
+            margin:0 18px;
+            font-size:20px;
         }
+        nav a:hover { color:white; }
 
-        .glow {
-            color: gold;
-            font-size: 28px;
-            font-weight: bold;
-            text-shadow: 0 0 12px gold;
-            margin-top: 40px;
+        /* TITOLO CENTRALE */
+        h1 {
+            margin-top:40px;
+            font-size:32px;
+            text-shadow:0 0 12px gold;
         }
 
         p {
-            font-size: 20px;
+            font-size:20px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top:60px;
+            background:#111;
+            padding:25px 10px;
+            text-align:center;
+            color:gold;
+            border-top:2px solid gold;
+        }
+        footer a {
+            color:gold;
+            text-decoration:none;
+            font-weight:bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="navbar">
+    <!-- LOGO -->
+    <div class="logo">ShoppingSmart IT</div>
+
+    <!-- MENU -->
+    <nav>
         <a href="index.html">Home</a>
         <a href="casa.html">Prodotti Casa</a>
         <a href="elettronica.html">Elettronica</a>
         <a href="offerte.html">Offerte</a>
         <a href="chi-siamo.html">Chi Siamo</a>
         <a href="contatti.html">Contatti</a>
-    </div>
+    </nav>
 
-    <h1 class="glow">Benvenuto su ShoppingSmart IT 🛒</h1>
+    <!-- TESTO HOME -->
+    <h1>Benvenuto su ShoppingSmart IT 🛒</h1>
     <p>Scegli una categoria dal menu</p>
 
-   <footer style="
-    margin-top:60px;
-    background:#111;
-    padding:25px 10px;
-    text-align:center;
-    color:gold;
-    border-top:2px solid gold;
-">
-    <p style="margin:5px 0;">© 2024 ShoppingSmart IT — Tutti i diritti riservati.</p>
-    <p style="margin:5px 0;">
-        <a href="contatti.html" style="color:gold; text-decoration:none;">Contatti</a> |
-        <a href="#" style="color:gold; text-decoration:none;">Privacy Policy</a> |
-        <a href="#" style="color:gold; text-decoration:none;">Termini di Servizio</a>
-    </p>
-</footer> 
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 ShoppingSmart IT — Tutti i diritti riservati.</p>
+        <p>
+            <a href="contatti.html">Contatti</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Termini di Servizio</a>
+        </p>
+    </footer>
 
 </body>
 </html>
